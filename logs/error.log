@@ -3003,3 +3003,12 @@ Stack Trace:
 Request URL: /users/register
 Referer URL: http://cakephp.hue/users/register
 Client IP: 127.0.0.1
+2023-05-05 18:24:32 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2023-05-05 18:24:47 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2023-05-05 18:26:34 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2023-05-05 18:26:34 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2023-05-05 18:26:57 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2023-05-05 18:26:58 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2023-05-05 18:28:05 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2023-05-05 18:28:05 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2023-05-05 18:28:22 warning: DebugKit is disabling itself as your host `cakephp.hue` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.

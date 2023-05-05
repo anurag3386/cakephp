@@ -423,7 +423,6 @@ return [
     ],
 
     'DebugKit' => [
-        'forceEnable' => true,
-        // other config options
+        'forceEnable' => false
     ]
 ];
