@@ -1,0 +1,186 @@
+2023-05-05 06:00:57 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 98
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php:158
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php:64
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/Migrate.php:85
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Command/Command.php:298
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:1040
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:301
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:171
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 86
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:86
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php:158
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php:64
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/Migrate.php:85
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Command/Command.php:298
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:1040
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:301
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:171
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
+2023-05-05 06:03:03 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 98
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php:158
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php:64
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/Migrate.php:85
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Command/Command.php:298
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:1040
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:301
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:171
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 86
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:86
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php:158
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php:64
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/Migrate.php:85
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Command/Command.php:298
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:1040
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:301
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:171
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
+2023-05-05 06:10:06 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 98
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php:158
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php:64
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/Migrate.php:85
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Command/Command.php:298
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:1040
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:301
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:171
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 86
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:86
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php:158
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php:64
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/Migrate.php:85
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Command/Command.php:298
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:1040
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:301
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:171
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
+2023-05-05 06:10:26 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 98
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php:158
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php:64
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/Migrate.php:85
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Command/Command.php:298
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:1040
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:301
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:171
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 86
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:86
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php:158
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home1/projects/cakephp/httpdocs/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php:64
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/Phinx/Migrate.php:85
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Command/Command.php:298
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:1040
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:301
+- /home1/projects/cakephp/httpdocs/vendor/symfony/console/Application.php:171
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
+2023-05-05 06:22:23 error: [TypeError] substr() expects parameter 1 to be string, null given in /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Util/ColumnParser.php on line 232
+Stack Trace:
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Util/ColumnParser.php:232
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Util/ColumnParser.php:205
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Util/ColumnParser.php:70
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/BakeMigrationCommand.php:95
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/BakeSimpleMigrationCommand.php:125
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/BakeMigrationCommand.php:55
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/migrations/src/Command/BakeSimpleMigrationCommand.php:89
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/BaseCommand.php:189
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home1/projects/cakephp/httpdocs/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home1/projects/cakephp/httpdocs/bin/cake.php:12
+
