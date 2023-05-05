@@ -1,6 +1,5 @@
 # CakePHP specific files #
 ##########################
-
 /logs/*
 /tmp/*
 
@@ -50,3 +49,4 @@ nbproject/*
 # yarn
 yarn-debug.log
 yarn-error.log
+
