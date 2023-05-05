@@ -29,12 +29,11 @@
                     echo $this->Form->control('lastName');
                     echo $this->Form->control('phone');
                     echo $this->Form->control('email',['type' => 'email']);
-                    echo $this->Form->control('subjects', array(
+                    echo $this->Form->control('subjects._ids', array(
                         'label' => 'Subjects (Choose at least one)',
                         'multiple' => 'multiple',
                         'type' => 'select',
                         'options' => $subjectsOptions,
-                        'value' => $selected_subjects,
                         'style' => 'height:120px;',
                         'required'=>true
                     ));

@@ -146,7 +146,7 @@ implements AuthenticationServiceProviderInterface
     public function getAuthenticationService(ServerRequestInterface $request): AuthenticationServiceInterface
     {
         $authenticationService = new AuthenticationService([
-            'unauthenticatedRedirect' => '/users/login',
+            'unauthenticatedRedirect' => '/',
             'queryParam' => 'redirect',
         ]);
 
@@ -166,7 +166,7 @@ implements AuthenticationServiceProviderInterface
                 'username' => 'email',
                 'password' => 'password',
             ],
-            'loginUrl' => '/users/login',
+            'loginUrl' => '/',
         ]);
 
         return $authenticationService;

@@ -17,15 +17,20 @@
       public function index()
       {
 
-          $searchQuery = $this->Students->find('all',['contain'=>['Subjects' => ['fields' => ['name']]]]);
+            $searchQuery = $this->Students->find('all',[
+                'contain'=>['Subjects'],
+                'order' => 'id desc'
+            ]);
 
           if ($this->request->is(['get','put'])) {
             $search_keyword = $this->request->getQuery('search_keyword');
             $conditionsArr  = [];
              
             if(!empty($search_keyword)){
-              $conditionsArr['OR']['Students.firstName LIKE'] =  $search_keyword.'%';
-              $conditionsArr['OR']['Students.lastName LIKE'] =  $search_keyword.'%';
+             // $conditionsArr['OR']['Students.firstName LIKE'] =  $search_keyword.'%';
+             // $conditionsArr['OR']['Students.lastName LIKE'] =  $search_keyword.'%';
+              $conditionsArr['OR']['CONCAT(Students.firstName," ",Students.lastName) LIKE'] =  '%'.$search_keyword.'%';   
+              
               $conditionsArr['OR']['Students.email LIKE'] =  $search_keyword;
             }
             //final search query
@@ -36,7 +41,7 @@
           $students = $this->paginate($searchQuery);
   
           $this->set(compact('students'));
-  //pr($students);
+       // pr($students);
          //echo json_encode($students);
   
           // exit();
@@ -49,16 +54,8 @@
       {
           $student = $this->Students->newEmptyEntity();
           if ($this->request->is('post')) {
-             
-             
               $student = $this->Students->patchEntity($student, $this->request->getData(),['associated' => ['Subjects']]);
-              if ($result	= $this->Students->save($student)) {
-
-                $student_id        =  $result->id;
-
-                $selected_subjects =  $this->request->getData()['subjects'] ?? [];
-                $this->Students->saveSubjects($selected_subjects,$student_id);
-
+              if ($this->Students->save($student)) {
                 $this->Flash->success(__('The student has been saved.'));
                 return $this->redirect(['action' => 'index']);
               }
@@ -83,15 +80,8 @@
           ]);
 
           if ($this->request->is(['patch', 'post', 'put'])) {
-              $student = $this->Students->patchEntity($student, $this->request->getData());
+              $student = $this->Students->patchEntity($student, $this->request->getData(),['associated' => 'Subjects']);
               if ($this->Students->save($student)) {
-                  $student_id   =  $id;
-
-                  $this->Students->StudentSubjects->deleteAll(['student_id' => $student_id]);
-
-                  $selected_subjects =  $this->request->getData()['subjects'] ?? [];
-                  $this->Students->saveSubjects($selected_subjects,$student_id);
-
                   $this->Flash->success(__('The student has been saved.'));
   
                   return $this->redirect(['action' => 'index']);
@@ -101,13 +91,8 @@
 
           $this->loadModel('Subjects');
 
-          $selected_subjects =  []; 
-          foreach($student->subjects as $subject){
-              $selected_subjects[]  = $subject->id;
-          }
-          
           $subjectsOptions  = $this->Subjects->find('list',['keyField' => 'id','valueField' => 'name','order' => 'name asc']);
-          $this->set(compact('student','subjectsOptions','selected_subjects'));
+          $this->set(compact('student','subjectsOptions'));
       }
   
       /**

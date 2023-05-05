@@ -34,7 +34,13 @@ class Student extends Entity
         'phone' => true,
         'email' => true,
         'dob' => true,
+        'subjects'=>true,
         'created_at' => true,
         'updated_at' => true
     ];
+     
+    protected function _getFullName()
+    {
+        return $this->firstName . ' ' . $this->lastName;
+    }
 }

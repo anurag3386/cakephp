@@ -2,17 +2,17 @@
     <?= $this->Html->link(__('New Student'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Manage Students') ?></h3>
     <?= $this->Form->create(null,['type' => 'get']) ?>
-     <?=  $this->Form->control('search_keyword', ['label' => false,'placeholder' => 'Search student by FirstName,LastName or Email','value' => $this->request->getQuery('search_keyword')]); ?>
+     <?=  $this->Form->control('search_keyword', ['label' => false,'placeholder' => 'Search by name or email','value' => $this->request->getQuery('search_keyword')]); ?>
     <?= $this->Form->end() ?>
     <div class="table-responsive">
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('No.') ?></th>
-                    <th><?= $this->Paginator->sort('name') ?></th>
-                    <th><?= $this->Paginator->sort('email') ?></th>
-                    <th><?= $this->Paginator->sort('Date of Birth') ?></th>
-                    <th><?= $this->Paginator->sort('Subjects') ?></th>
+                    <th><?= __('ID') ?></th>
+                    <th><?= __('Name') ?></th>
+                    <th><?= __('Email') ?></th>
+                    <th><?= __('Date of Birth') ?></th>
+                    <th><?= __('Subjects') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
@@ -28,7 +28,7 @@
                         ?>
                     <tr>
                         <td><?= $this->Number->format($student->id) ?></td>
-                        <td><?= h($student->firstName) ?> <?= h($student->lastName) ?></td>
+                        <td><?= h($student->full_name) ?></td>
                         <td><?= h($student->email) ?></td>
                         <td><?= date('d-m-Y',strtotime($student->dob)) ?></td>
                         <td><?= h(implode(", ", $subjects)) ?></td>

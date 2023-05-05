@@ -11,6 +11,9 @@ use Cake\Validation\Validator;
 
 class StudentsTable extends Table
 {
+    // var $virtualFields = array(
+    //   'name' => "CONCAT(Student.firstName, ' ', Student.lastName)"
+    // );
     /**
      * Initialize method
      *
@@ -25,7 +28,7 @@ class StudentsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->belongsToMany('Subjects', [
-          'through' => 'StudentSubjects',
+          'through' => 'StudentSubjects'
         ]);
     }
 
@@ -41,13 +44,14 @@ class StudentsTable extends Table
       ->notEmptyString('firstName', 'An Firstname is required')
       ->notEmptyString('lastName', 'An Lastname is required')
       ->notEmptyString('phone', 'Phone Number is required')
-      ->email('email')
       ->notEmptyString('email', 'An email is required')
+      ->email('email')
       ->notEmptyDate('dob', 'DOB is required')
+      ->date('dob')
       ;
       return $validator;
     }
-
+    /*
     public function saveSubjects($selected_subjects=[],$student_id) {
       if($selected_subjects){
         $query = $this->StudentSubjects->query();
@@ -61,5 +65,5 @@ class StudentsTable extends Table
         }
         $query->execute();
       }
-    }
+    }*/
 }
